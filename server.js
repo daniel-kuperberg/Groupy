@@ -23,8 +23,8 @@ var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
 app.get('/', function (request, res) {
-    console.log('aa');
-    res.sendFile('C:\\AngularApp\\Groupy\\public\\default.html');
+    console.log(__dirname);
+    res.sendFile(__dirname + '/public/default.html');
 });
 server.listen(port, function () {
     var host = "127.0.0.1";
