@@ -16,8 +16,6 @@ server.listen(port, function () {
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use(express.static(__dirname + '/public'));
-//app.use(express.static(path.join(__dirname, 'public')));
-// Chatroom
 // usernames which are currently connected to the chat
 
 var client = {
@@ -40,8 +38,7 @@ io.on('connection', function (socket) {
         // we tell the client to execute 'new message'  
         var a = JSON.stringify(data);
         console.log(a);
-        debugger;
-
+        
         var clientNumberinArray = -1;
         for (var i = 0; i < clientsArray.length; i++) {
             if (clientsArray[i].username == data.username)
@@ -49,8 +46,7 @@ io.on('connection', function (socket) {
         }
 
         console.log("Client Number in array: " + clientNumberinArray);
-        //console.log("GroupName: " + clientsArray[clientNumberinArray].groupName);
-
+  
         for (var i = 0; i < clientsArray.length; i++) {
             if (i == clientNumberinArray)
                 continue;
