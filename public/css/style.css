@@ -27,15 +27,45 @@ span.timestamp {
 
 .login.page .form {
   height: 100px;
-  margin-top: -100px;
+  /*margin-top: -100px;*/
   position: absolute;
 
   text-align: center;
-  top: 50%;
+  top: 20%;
+  width: 100%;
+}
+
+.login.page .form2 {
+  height: 100px;
+  /*margin-top: -100px;*/
+  position: absolute;
+
+  text-align: center;
+  top: 40%;
+  width: 100%;
+}
+
+.login.page .form3 {
+  height: 100px;
+  /*margin-top: -100px;*/
+  position: absolute;
+  
+  text-align: center;
+  top: 60%;
   width: 100%;
 }
 
 .login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .form2 .groupnameInput {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
@@ -55,6 +85,16 @@ span.timestamp {
 }
 
 .login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+.login.page .groupnameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .groupnameInput {
   color: #fff;
   font-weight: 100;
 }
