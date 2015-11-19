@@ -1,6 +1,9 @@
 {
   "name": "Groupy",
   "version": "1.0.0",
+      "engines": {
+    "node": "4.1.1"
+  },
   "description": "Chat",
   "main": "server.js",
   "scripts": {
@@ -11,5 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3"
+
   }
+
 }
